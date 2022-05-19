@@ -21,8 +21,8 @@ Where these are used, you'll want to pick your own unique `project-name` and `mo
 
 ## Fresh Start
 If you don't have the artifacts in an S3 bucket yet:
-1[Ensure you have an active AWS CLI Session in your Terminal](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html))
-2[Create an S3 bucket](https://github.com/data-derp/s3-bucket-aws-cloudformation)
+1. [Ensure you have an active AWS CLI Session in your Terminal](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html))
+2. [Create an S3 bucket](https://github.com/data-derp/s3-bucket-aws-cloudformation)
 3. Upload the transformed data:
 ```bash
 # Change these variables
