@@ -1,5 +1,7 @@
 # CO2 vs. Temperature (Visualisation)
-In this exercise, we assume that you've completed the [production-code](https://github.com/data-derp/exercise-co2-vs-temperature-production-code) and have managed to push those artifacts to an AWS S3 Bucket. If not, see [Fresh Start](#fresh-start). This exercise focuses on using those artifacts as part of an AWS Glue workflow.
+In this exercise, we assume that you've completed the [production-code](https://github.com/data-derp/exercise-co2-vs-temperature-production-code) and have managed to push those artifacts to an AWS S3 Bucket. 
+
+If you don't already hav ethese artifacts, follow the instructions under [Fresh Start](#fresh-start).
 
 **NOTE:** The following exercises follow the same concept as [the production-code exercise](https://github.com/data-derp/exercise-co2-vs-temperature-production-code) where a `project-name` and `module-name` are used consistently to create resources.
 
@@ -10,14 +12,28 @@ In all examples in ,
 Where these are used, you'll want to pick your own unique `project-name` and `module-name`.
 
 ## Prerequisites
-* An AWS Account and IAM User with permissions to create AWS Glue and Athena resources and read S3 buckets
-* [AWS CLI access](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html))
+* An AWS Bucket containing project data (see [Fresh Start](#fresh-start))
 
 ## Quickstart
-1. [Make your bucket public](#make-your-bucket-public)
-2. Open [Data Visualisation CO2 vs Temperature.dbc](./Data%20Visualisation%20CO2%20vs.%20Temperature.dbc) in [Databricks Community Edition](https://community.cloud.databricks.com/)
-   ![databricks-import](./assets/databricks-import.png)
-3. Follow instructions in Notebook
+1. Ensure your AWS bucket containing the relevant project data exists (if it doesn't or if you have no idea what this is, please see [Fresh Start](#fresh-start))
+2. Set up a [Databricks Account](https://github.com/data-derp/documentation/blob/master/databricks/README.md) if you don't already have one
+3. [Create a cluster](https://github.com/data-derp/documentation/blob/master/databricks/setup-cluster.md) if you don't already have one
+4. [Make your bucket public](#make-your-bucket-public)
+
+5. In your User's workspace, click import
+
+   ![databricks-import](https://github.com/data-derp/documentation/blob/master/databricks/assets/databricks-import.png?raw=true)
+
+6. Import the `Data Visualisation CO2 vs Temperature.py` notebook using the URL method: `https://github.com/data-derp/exercise-co2-vs-temperature-visualisation/blob/master/Data%20Visualisation%20CO2%20vs.%20Temperature.py`
+
+   ![databricks-import-url](https://github.com/data-derp/documentation/blob/master/databricks/assets/databricks-import-url.png?raw=true)
+
+7. Select your cluster
+
+   ![databricks-select-cluster.png](https://github.com/data-derp/documentation/blob/master/databricks/assets/databricks-select-cluster.png?raw=true)
+
+8. Follow instructions
+
 
 ## Fresh Start
 If you don't have the artifacts in an S3 bucket yet:
