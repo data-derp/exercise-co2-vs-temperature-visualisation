@@ -1,4 +1,6 @@
-# CO2 vs. Temperature (Visualisation)
+# CO2 vs. Temperature (Visualisation) (DEPRECATED)
+NOTE: This exercise has been deprecated and has been moved [here](https://github.com/data-derp/exercise-co2-vs-temperature-databricks/tree/master/data-visualisation)
+
 In this exercise, we assume that you've completed the Data Ingestion and Data Transformation exercises.
 
 ## Quickstart
